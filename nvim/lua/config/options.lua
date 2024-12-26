@@ -4,8 +4,8 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 
-opt.tabstop = 4       -- number of spaces for tab
-opt.shiftwidth = 4 
+opt.tabstop = 4         -- number of spaces for tab
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 

@@ -5,10 +5,15 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>cs", ":nohl<CR>", { desc = "Clears highlighted search in file" })
 
 -- window management
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split vim window vertically" })
-keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split vim window horisontally" })
-keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make split windows to equal size" })
-keymap.set("n", "<leader>sq", "<C-w>v", { desc = "Close current split" })
+keymap.set("n", "<leader>wsv", "<C-w>v", { desc = "Split vim window vertically" })
+keymap.set("n", "<leader>wsh", "<C-w>s", { desc = "Split vim window horisontally" })
+keymap.set("n", "<leader>wse", "<C-w>=", { desc = "Make split windows to equal size" })
+
+keymap.set("n", "<leader>wh", "<C-w>h", { desc = "Moves to left window" })
+keymap.set("n", "<leader>wl", "<C-w>l", { desc = "Moves to right window" })
+keymap.set("n", "<leader>wj", "<C-w>j", { desc = "Moves one window down" })
+keymap.set("n", "<leader>wk", "<C-w>k", { desc = "Moves one window up" })
+keymap.set("n", "<leader>wq", "<C-w>q", { desc = "Close current split window" })
 
 -- tab management
 keymap.set("n", "<leader>tn", "<cmd>tabnew<CR>", { desc = "Open new tab" })
