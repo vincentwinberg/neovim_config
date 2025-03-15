@@ -1,8 +1,14 @@
 return {
-	"chriskempson/base16-vim",
-	name = "base-16",
+	'f4z3r/gruvbox-material.nvim',
+	name = 'gruvbox-material',
+	lazy = false,
 	priority = 1000,
 	config = function()
-		vim.cmd("colorscheme base16-default-dark")
+		require('gruvbox-material').setup({
+			contrast = "hard",        -- set contrast, can be any of "hard", "medium", "soft"
+		})
+		
+		vim.cmd.colorscheme('gruvbox-material')
 	end,
 }
+
