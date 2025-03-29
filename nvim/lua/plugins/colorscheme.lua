@@ -1,14 +1,12 @@
 return {
-	'f4z3r/gruvbox-material.nvim',
-	name = 'gruvbox-material',
-	lazy = false,
+    'deparr/tairiki.nvim',
 	priority = 1000,
+    lazy = false,
 	config = function()
-		require('gruvbox-material').setup({
-			contrast = "hard",        -- set contrast, can be any of "hard", "medium", "soft"
-		})
-		
-		vim.cmd.colorscheme('gruvbox-material')
+        require('tairiki').setup({
+            plugins = { auto = true },
+        })
+		vim.cmd.colorscheme('tairiki')
 	end,
 }
 
